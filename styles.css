@@ -8,6 +8,7 @@ body {
     background:
         radial-gradient(circle at 65% 5%, rgba(255,255,220,0.25), transparent 60%),
         linear-gradient(1800deg, #0a1a2a 0%, #0a274b 100%); 
+        linear-gradient(1800deg, #0a1a2a 0%, #0a274b 100%);
 }
 
 main {
@@ -22,6 +23,22 @@ main {
     box-shadow:
         6px 7px 12px black,
         0px 12px 30px #3f3f3f;
+}
+
+.moon {
+    position: absolute;
+    left: 65%;
+    top: 5%;
+    width: 10rem;
+    height: 10rem;
+    background-color: #fddd5e;
+    box-shadow: 
+        5px 5px 10px #ffe063,
+        -5px -5px 10px #ffe063,
+        -5px 5px 10px #ffe063,
+        5px -5px 10px #ffe063;
+    border-radius: 50%;
+    text-align: center;
 }
 
 .form {
@@ -207,6 +224,7 @@ button {
 }
 
 footer {
+    color: white;
     position: relative;
     padding-top: 1.8rem;
     left: 50%;
