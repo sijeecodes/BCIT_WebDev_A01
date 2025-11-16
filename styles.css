@@ -5,7 +5,6 @@
 body {
     font-family: 'Roboto Slab', serif;
     height: 100%;
-        /* Linear gradient = sky, Radial gradient = moon faint glow */
     background:
         radial-gradient(circle at 65% 5%, rgba(255,255,220,0.25), transparent 60%),
         linear-gradient(1800deg, #0a1a2a 0%, #0a274b 100%);
