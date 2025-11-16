@@ -5,7 +5,9 @@
 body {
     font-family: 'Roboto Slab', serif;
     height: 100%;
-    background: linear-gradient(180deg, rgb(247, 189, 151) 0%, rgb(234, 40, 26) 100%);    
+    background:
+        radial-gradient(circle at 65% 5%, rgba(255,255,220,0.25), transparent 60%),
+        linear-gradient(1800deg, #0a1a2a 0%, #0a274b 100%); 
 }
 
 main {
