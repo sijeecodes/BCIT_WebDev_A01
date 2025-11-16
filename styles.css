@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    height: 82rem;
+    background: linear-gradient(180deg, rgb(247, 189, 151) 0%, rgb(234, 40, 26) 100%);    
+}
+
+main {
+    width: 33rem;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 0.7rem 2rem 1rem 2rem;
+    color: rgb(34, 60, 110);
+    box-shadow:
+        6px 7px 12px black,
+        0px 12px 30px #3f3f3f;
+}
+
+.form {
+    height: auto;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: bold;
+    size: 5rem;
+    margin-bottom: 0.2rem;
+    text-shadow: 2px 2px 3px #C5C5C5;
+}
+
+
+.h1Underline {
+    width: 6rem;
+    border-top: 4px solid #12305e;
+    margin-left: 0.1rem;
+    margin-bottom: 2.8rem;
+    box-shadow: 2px 2px 3px #C5C5C5;
+}
+
+.titleField {
+    border: none;
+    border-top: 2px solid gray;
+    padding: 0;
+    margin: 2.2rem 0 0 0;
+}
+
+.titleContainer {
+    height: 1rem;
+    border: none;
+    margin-bottom: 1.2rem;
+    margin-left: 0.8rem;
+}
+
+.titleBox {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    height: 2rem;
+    top: -1.1rem;
+    padding: 0 0.4rem;
+}
+
+.numberBadge {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    top: -1.1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #12305e;
+    color: white;
+    font-weight: bold;
+    line-height: 2.2rem;
+    margin-right: 0.4rem;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    top: -0.9rem;
+    height: 2.2rem;
+}
+
+.visuallyHidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+input {
+    color: gray;
+    width: 100%;
+    background-color: #e5ebec;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.8rem;
+    margin: 0.2rem 0;
+}
+
+.passwordRules {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 0.6rem;
+}
+
+.subTitle {
+    font-weight: bolder;
+    border: none;
+    font-size: 1.2rem;
+    margin: 0.1rem 0;
+}
+
+.subField {
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.optionRow,
+.optionRow2 {
+    position: relative;
+    display: flex;
+    margin: 0.6rem 0 0.6rem 0.6rem;
+}
+
+.optionRow2 {
+    left: -0.8rem;
+}
+
+.optionBox {
+    width: 35%;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 1.4rem;
+}
+
+.otherBox {
+    margin-top: 0.5rem;
+}
+
+.optionListBox {
+    background-color: #e5ebec;
+    width: 100%;
+    padding: 0.8rem 0.7rem;
+    border-radius: 0.3rem;
+    border: none;
+    margin-bottom: 0.7rem;
+}
+
+.commentBox,
+.magicDetails {
+    background-color: #e5ebec;
+    width: 100%;
+    height: 8rem;
+    padding: 0.8rem 0.7rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.magicDetails {
+    resize: none;
+    height: 2.6rem;
+}
+
+#magicBox {
+    display: none;
+}
+
+button {
+    width: 100%;
+    height: 3.6rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.submitButton {
+    margin-top: 0.4rem;
+    margin-bottom: 2.2rem;
+    color: white;
+    background-color: #12305e;
+}
+
+.resetButton {
+    color: red;
+    border: 1px solid #C5C5C5;
+    background: none;
+}
+
+footer {
+    position: relative;
+    padding-top: 1.8rem;
+    left: 50%;
+    width: 20rem;
+    text-align: end;
+}

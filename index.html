@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Signup</h1>
+        <div class="h1Underline"></div>
+        <form class="form">
+            <fieldset class="titleField">
+                <legend class="titleContainer">
+                    <div class="titleBox">
+                        <div class="numberBadge">1</div><h2>Account Info</h2>
+                    </div>
+                </legend>
+
+                <label class="visuallyHidden" for="fullName">Full Name</label>
+                <input id="fullName" name="fullName" placeholder="Full Name..." required>
+
+                <label class="visuallyHidden" for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Email Address..." required>
+
+                <label class="visuallyHidden" for="password" minlength="12"
+                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{12,}$">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password..." required>
+                
+                <div class="passwordRules">
+                    <div>Minimum 12 Characters.</div>
+                    <div>Must include uppercase, lowercase, number and symbol.</div>
+                </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="titleField">
+                <legend class="titleContainer">
+                    <div class="titleBox">
+                        <div class="numberBadge">2</div><h2>Dev Skills</h2>
+                    </div>
+                </legend>
+
+                <div class="subField">
+                    <div class="subTitle">Core Languages</div>
+                    <div class="optionRow">
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="languages" value="html" />HTML</label></div>
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="languages" value="css" />CSS</label></div>
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="languages" value="javascript" />JavaScript</label></div>
+                    </div>
+                    <div class="optionRow">
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="languages" value="php" />PHP</label></div>
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="languages" value="c#" />C#</label></div>
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="languages" value="kotlin" />Kotlin</label></div>
+                    </div>
+                </div>
+
+                <div class="subField">
+                    <div class="subTitle">Libraries / Frameworks</div>
+                    <div class="optionRow">
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="frameworks" value="react" />React</label></div>
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="frameworks" value="angular" />Angular</label></div>
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="frameworks" value="vue.js" />js</label></div>
+                    </div>
+                </div>
+
+                <div class="subField">
+                    <div class="subTitle">Dev Ops</div>
+                    <div class="optionRow">
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="devops" value="git" />GIT</label></div>
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="devops" value="gulp" />Gulp</label></div>
+                        <div class="optionBox"><label><input class="checkbox" type="checkbox" name="devops" value="docker" />Docker</label></div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="titleField">
+                <legend class="titleContainer">
+                    <div class="titleBox">
+                        <div class="numberBadge">3</div><h2>Experience</h2>
+                    </div>
+                </legend>
+                <div class="optionRow2">
+                    <div class="optionBox"><label><input class="checkbox" type="radio" name="experience" value="beginner" />Beginner</label></div>
+                    <div class="optionBox"><label><input class="checkbox" type="radio" name="experience" value="intermediate" />Intermediate</label></div>
+                    <div class="optionBox"><label><input class="checkbox" type="radio" name="experience" value="advanced" />Advanced</label></div>
+                </div>
+            </fieldset>
+
+            <fieldset class="titleField">
+                <legend class="titleContainer">
+                    <div class="titleBox">
+                        <div class="numberBadge">4</div><h2>Other</h2>
+                    </div>
+                </legend>
+
+                <div class="otherBox">
+                    <label for="hear">How did you hear about us?</label>
+                    <select class="optionListBox" id="hear" name="hear">
+                        <option>Please Select...</option>
+
+                        <optgroup label="Person">
+                            <option value="friend">Friend</option>
+                            <option value="family">Family</option>
+                            <option value="colleague">Colleague</option>
+                        </optgroup>
+
+                        <optgroup label="Media">
+                            <option value="internet">Internet</option>
+                            <option value="radio">Radio</option>
+                            <option value="tv">TV</option>
+                            <option value="newspaper">Newspaper</option>
+                        </optgroup>
+
+                        <optgroup label="Other">
+                            <option value="magic">Magic!</option>
+                            <option value="other">Other…</option>
+                        </optgroup>
+                    </select>
+                    <div id="magicBox">
+                        <label for="magicDetails">Details, please...</label>
+                        <textarea class="magicDetails" id="magicDetails" name="magicDetails" placeholder="Do tell!"></textarea>
+                    </div>
+                    <label for="comments">Comments</label>
+                    <textarea class="commentBox" id="comments" name="comments"></textarea>
+                </div>
+            </fieldset>
+            <button class="submitButton" type="submit" class="submit-btn">Submit</button>
+            <button class="resetButton" type="reset" class="clear-btn">Clear Form</button>
+        </form>
+    </main>
+    <footer>© 2025 Simon Jee<footer>
+</body>
+
+<script>
+    const select = document.getElementById("hear");
+    const detailsBox = document.getElementById("magicBox");
+
+    select.addEventListener("change", function () {
+        this.value === "magic" || this.value === "other" ?
+            detailsBox.style.display = "block"
+            : detailsBox.style.display = "none";
+    });
+</script>
+</html>
