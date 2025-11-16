@@ -1,0 +1,15 @@
+AI interactions
+
+1. Used AI
+ - ChatGPT (free access)
+ - Grok (free access)
+
+2. Usage
+ - For prototyping through image.
+ - Ask questions of HTML and CSS, when my codes don't give intended output.
+
+3. Thoughts
+ - AI's didn't do much of the coding in my assignment,
+   but it did give me some ideas about how the html and css should be made.
+   It saved me time on finding answers to my questions, since it's faster than searching the web.
+   Also, comparing two AIs was interesting.
